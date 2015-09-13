@@ -49,6 +49,7 @@
                     foreach($results as $row) {
                         $news_id = $row["news_id"];
                         $c_date = substr($row["create_date"],0,10);
+                        
                         print $c_date;
                         //print $row["create_date"];
                         print "            ";
