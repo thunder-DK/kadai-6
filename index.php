@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -48,13 +47,13 @@
                     $stmt->execute();
                     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     foreach($results as $row) {
-                        $iKey = $row["news_id"];
+                        $news_id = $row["news_id"];
                         $c_date = substr($row["create_date"],0,10);
                         print $c_date;
                         //print $row["create_date"];
                         print "            ";
                         $cc_newstitle = $row["news_title"];
-                        print "<a href=\"news.php?key1=$iKey\">$cc_newstitle</a>";
+                        print "<a href=\"news.php?id=$news_id\">$cc_newstitle</a>";
                         // print $row["news_title"];
                         print "<br>";
                     }

@@ -22,7 +22,7 @@
                 
                 <?php
 
-                    $get_value = $_GET["key1"];
+                    $get_value = $_GET["id"];
 
                     $pdo = new PDO("mysql:host=localhost;dbname=cs_academy;charset=utf8", "root", "");
                     $sql = "SELECT * FROM news WHERE news_id = $get_value";

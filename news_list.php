@@ -42,14 +42,14 @@
                     $stmt->execute();
                     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     foreach($results as $row) {
-                        $iKey = $row["news_id"];
+                        $news_id = $row["news_id"];
                         $cc_date = substr($row["create_date"],0,10);
                         print $cc_date;
                         // print $row["create_date"];
                         print "       ";
                         //print "<a href=\"http://www.google.co.jp/\">Google</a>にリンクします。\n";
                         $cc_newstitle = $row["news_title"];
-                        print "<a href=\"news.php?key1=$iKey\">$cc_newstitle</a>";
+                        print "<a href=\"news.php?id=$news_id\">$cc_newstitle</a>";
                         print "       ";
                         // print $row["update_date"];
                         print "<br>";
