@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <!--
     <head>
         <title>footer</title>
         <meta charset="utf-8">
     </head>
+    -->
+
     <body>
         <footer class="footer contents-box">
             <h2 class="section-title text-center"><span class="section-title__white">Information</span><span class="section-title-ja section-title__white text-center">基本情報</span></h2>
